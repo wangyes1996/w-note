@@ -1,10 +1,10 @@
 module.exports = {
     // theme: 'antdocs',
-    title: '活着',
+    title: 'wangyes的学习笔记',
     description: 'Just playing around',
     "themeConfig": {
-		"repo": "BetaSu/just-react",
-		"repoLabel": "点亮⭐不迷路",
+		// "repo": "BetaSu/just-react",
+		// "repoLabel": "点亮⭐不迷路",
 		"editLinks": true,
 		"docsDir": "docs",
 		"editLinkText": "为该章节纠错",
@@ -33,11 +33,11 @@ module.exports = {
 				"collapsable": true,
 				"children": [
 					{
-						"title": "安装nrm报错",
+						"title": "nrm",
 						"children": [
 							[
 								"/keng/install_nrm",
-								"React理念"
+								"nrm安装"
 							],
 		
 						]
