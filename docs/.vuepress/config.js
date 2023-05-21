@@ -26,7 +26,8 @@ module.exports = {
 		"sidebar": [
 			[
 				"/",
-				"前言"
+				"前言",
+				
 			],
 			{
 				"title": "踩坑实战",
@@ -37,7 +38,8 @@ module.exports = {
 						"children": [
 							[
 								"/keng/install_nrm",
-								"nrm安装"
+								"nrm安装",
+								
 							],
 		
 						]
