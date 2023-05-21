@@ -9,5 +9,8 @@
   "scripts": {
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress dev docs",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress-theme-antdocs": "^1.4.6"
   }
 }
