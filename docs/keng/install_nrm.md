@@ -11,4 +11,4 @@ code: ‘ERR_REQUIRE_ESM’
 ## 原因：
 应该使用 open 的 CommonJs规范的包 ，现在 open v9.0.0 是 ES Module 版本的包
 ## 解决方法：
-npm install -g nrm open@8.4.2 --save
+npm install -g nrm open@8.4.2 --save --registry=https://registry.npm.taobao.org
