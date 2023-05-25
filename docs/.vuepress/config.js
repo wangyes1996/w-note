@@ -1,10 +1,11 @@
 
-const kengmenu=require('./menu/keng')
+const { python_menu } = require('./menu/python')
+const { server_menu } = require('./menu/server')
 module.exports = {
-    // theme: 'antdocs',
-    title: 'wangyes的学习笔记',
-    description: 'Just playing around',
-    "themeConfig": {
+	// theme: 'antdocs',
+	title: 'wangyes的学习笔记',
+	description: 'Just playing around',
+	"themeConfig": {
 		// "repo": "BetaSu/just-react",
 		// "repoLabel": "点亮⭐不迷路",
 		"editLinks": true,
@@ -25,39 +26,42 @@ module.exports = {
 			// 	"link": "https://ustbhuangyi.github.io/vue-analysis/"
 			// },
 		],
-		"sidebar": [
+		sidebar: [
 			[
 				"/",
 				"前言",
-				
 			],
 			{
-				title: "踩坑实战",
-				collapsable: true,
-				children: kengmenu.keng_menu
+				title: "服务器运维",
+				// collapsable: true,
+				children: server_menu
 			},
 			{
-				title:'海的那边',
-				collapsable: true,
-				children:[
-					{
-						title:'虚拟货币-K线分析',
-						children:[
-
-						]
-					}
-				]
-
+				title: 'python',
+				children: python_menu
 			}
+			// {
+			// 	title:'海的那边',
+			// 	collapsable: true,
+			// 	children:[
+			// 		{
+			// 			title:'虚拟货币-K线分析',
+			// 			children:[
+
+			// 			]
+			// 		}
+			// 	]
+
+			// }
 
 		],
-        pageAnchor:{
-            isDisabled: false,
-            anchorDepth: 4
-          },
+		pageAnchor: {
+			isDisabled: false,
+			anchorDepth: 4
+		},
 	},
-    
-  }
+
+}
 //   module.exports = {
 // 	"title": "React技术揭秘",
 // 	"description": "React源码解析",
