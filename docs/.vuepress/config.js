@@ -1,3 +1,5 @@
+
+const kengmenu=require('./menu/keng')
 module.exports = {
     // theme: 'antdocs',
     title: 'wangyes的学习笔记',
@@ -30,22 +32,9 @@ module.exports = {
 				
 			],
 			{
-				"title": "踩坑实战",
-				"collapsable": true,
-				"children": [
-					{
-						"title": "nrm",
-						"children": [
-							[
-								"/keng/install_nrm",
-								"nrm安装",
-								
-							],
-		
-						]
-					},
-					
-				]
+				title: "踩坑实战",
+				collapsable: true,
+				children: kengmenu.keng_menu
 			},
 			{
 				title:'海的那边',
