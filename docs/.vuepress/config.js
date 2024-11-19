@@ -1,6 +1,7 @@
 
 const { python_menu } = require('./menu/python')
 const { server_menu } = require('./menu/server')
+const { frontend_menu } = require('./menu/frontend')
 module.exports = {
 	// theme: 'antdocs',
 	title: 'wangyes的学习笔记',
@@ -39,6 +40,10 @@ module.exports = {
 			{
 				title: 'python',
 				children: python_menu
+			},
+			{
+				title: '前端',
+				children:frontend_menu
 			}
 			// {
 			// 	title:'海的那边',
